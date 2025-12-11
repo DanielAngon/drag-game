@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doge Drag Game</title>
+<title>Flopper Dragging Game</title>
 <!-- Bootstrap -->
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -15,25 +15,21 @@ crossorigin="anonymous">
 <body>
 <header>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-<a class="navbar-brand" href="#">Doge Drag Game</a>
+<a class="navbar-brand" href="#">Flopper Draggin Game</a>
 </nav>
 </header>
 <div class="container mt-4">
-<h1 class="text-center mb-4">￿ Drag the Doge to Earn Points! ￿</h1>
+<h1 class="text-center mb-4">￿ Drag around the Flopper to Earn Points! ￿</h1>
 <p class="text-center lead">
-Move the Doge around the play area to increase your score.
+Move the Flopper around the play area to increase your score.
 <br>Different zones may give <strong>more points</strong></p>
 <div class="row mt-4">
 <!-- Game Area -->
 <div class="col-xl-8 mb-4">
 <div id="containment-wrapper">
-<img id="doge-meme-pic" style="height: 100px; width:auto;"
-src="https://external-
-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F11%2FDoge-
-Meme-PNG-Free-
-Download.png&f=1&nofb=1&ipt=fb032d58b8491c997d446adc07804ae8aa4846257ca840d61f8992f
-29e0cfa3b"
-alt="Doge meme">
+<img id="flopper-pic" style="height: 100px; width:auto;"
+src="imgs/Flopper.png"
+alt="Fortnite Flopper">
 </div>
 </div>
 <!-- Score Panel -->
@@ -48,11 +44,12 @@ alt="Doge meme">
 </div>
 </div>
 <div class="alert alert-info mt-3" id="status-message">
-Drag Doge to begin!
+Drag Flopper to begin!
 </div>
 <p class="small text-muted mt-4">
-Tip: Try dragging Doge near the edges. Something special might happen...
+Tip: Try dragging the Flopper near the edges. Something special might happen...
 </p>
+<button id="reset-btn" class="btn btn-danger btn-block mt-3">Reset Game</button>
 </div>
 </div>
 </div>

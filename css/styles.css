@@ -1,27 +1,68 @@
+/* Global body styling */
 body {
-background: linear-gradient(to bottom right, #f0f4ff, #d5e1ff);
+  background: linear-gradient(to bottom right, #0a0a0a, #1a1a1a); /* dark base */
+  color: #e0e0e0; /* light gray text for general body */
+  font-family: 'Poppins', sans-serif;
 }
+
+/* Game area container */
 #containment-wrapper {
-position: relative;
-height: 400px;
-border: 2px dashed #999;
-border-radius: 10px;
-background: #ffffffaa;
-backdrop-filter: blur(3px);
+  position: relative;
+  height: 400px;
+  border: 2px dashed #999;
+  border-radius: 10px;
+  background: #ffffff; /* white play area background */
+  backdrop-filter: blur(3px);
 }
-#doge-meme-pic {
-cursor: grab;
+
+/* Flopper image cursor styles */
+#flopper-pic {
+  cursor: grab;
+  background: none; /* ensure no background behind image */
 }
-#doge-meme-pic:active {
-cursor: grabbing;
+#flopper-pic:active {
+  cursor: grabbing;
 }
-.score-box {
-background: #fff;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+/* Score panel (Bootstrap card style) */
+.score-box,
+.card {
+  background: #fff; /* white panel background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Darker text for score and descriptions */
+#score-display {
+  color: #222 !important;   /* deep gray for score number */
+  font-weight: 600;
+}
+
+.card-title,
+.card-body h5,
+#status-message,
+#wow-output,
+.score-box p {
+  color: #333 !important;   /* darker text for headings and descriptions */
+}
+
+/* Optional: darker alert text */
+.alert-info {
+  color: #111 !important;
+}
+
+/* Progress bar styling */
+.progress-bar {
+  background: linear-gradient(90deg, #ff0000, #800080); /* red → purple gradient */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #000 !important;
 }
 .navbar-brand {
-font-size: 18px;
-font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000 !important; /* red accent for branding */
 }
